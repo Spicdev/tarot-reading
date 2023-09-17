@@ -39,14 +39,14 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">4/5 Studio Tarot</a>
+                </button>
+                <a class="navbar-brand" href="index.html">4/5 Studio Tarot</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -57,10 +57,12 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="https://github.com/Spicdev" class="navbar-brand"><img src="css/images/icons/github-logo.png" style="width: 20px;"></a>
+                        <a href="https://github.com/Spicdev" class="navbar-brand"><img
+                                src="css/images/icons/github-logo.png" style="width: 20px;"></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/國立台灣海洋大學塔羅研習社-139070089568704/" class="navbar-brand"><img src="css/images/icons/facebook.png" style="width: 20px;"></a>
+                        <a href="https://www.facebook.com/國立台灣海洋大學塔羅研習社-139070089568704/" class="navbar-brand"><img
+                                src="css/images/icons/facebook.png" style="width: 20px;"></a>
                     </li>
                     <li><a href="mailto:ntoutarot@gmail.com" class="navbar-brand">聯繫我們</a></li>
                 </ul>
@@ -144,29 +146,43 @@
                     </div>
                 </div>
             </div>
-
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>測試牌陣</h3>
+                        <p>適用問題：</p>
+                        <ul>
+                            <li>五張牌的格式</li>
+                            <li>五張牌的格式</li>
+                        </ul>
+                        <p><button type="button" class="btn btn-primary" id="testCardSpread">開始</button></p>
+                    </div>
+                </div>
+            </div>
         </div>
         <hr>
         <footer>
             <p>Penny &copy; 2023</p>
         </footer>
     </div>
-    <!-- Modal --> 
+    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel"></h4>
                 </div>
                 <div class="modal-body">
                     <div class="row" id="myModalBody"></div>
                     <hr>
-                    <h4 class="modal-title" id="myModalELabel"></h4>   
-                <div class="row" id="myModalExtra"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="dlcCards">補牌</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">關閉</button>
+                    <h4 class="modal-title" id="myModalELabel"></h4>
+                    <div class="row" id="myModalExtra"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="dlcCards">補牌</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">關閉</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,6 +193,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/spread.js"></script>
+
 </body>
 
 </html>
