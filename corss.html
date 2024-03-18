@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Draw | 4/5 Studio Tarot</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+
+<body>
+    <div class="row">
+        <div class="col-4">
+            1
+        </div>
+        <div class="col-4">
+            2
+        </div>
+        <div class="col-4">
+            3
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-4 ">
+                <div class="card-header">
+                    Featured 9
+                </div>
+                <div class="card">
+                    <img src="css/images/tarot/9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="card-header">
+                    Featured 32
+                </div>
+                <div class="card">
+                    <img src="css/images/tarot/32.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+            <div class="col-sm-4 ">
+                <div class="card-header">
+                    Featured 46
+                </div>
+                <div class="card">
+                    <img src="css/images/tarot/46.jpg" class="card-img-top" alt="...">
+                    <div class="card-body"></div>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <img src="css/images/tarot/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p><button type="button" class="btn btn-primary" id="testCardSpread">開始</button></p>
+                </div>
+            </div>
+            <div>
+                <button type="button"  class="btn btn-primary" id="plus">加數字</button>
+                <p id = "counts">共計: 0</p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" id="myModalBody">
+
+                        </div>
+                        <hr>
+                        <h4 class="modal-title" id="myModalELabel"></h4>
+                        <div class="row" id="myModalExtra"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="dlcCards">補牌</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/spread.js"></script>
+        <script src="js/shuffle.js"></script>
+
+
+</body>
+
+
+</html>

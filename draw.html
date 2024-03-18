@@ -39,14 +39,14 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">4/5 Studio Tarot</a>
+                </button>
+                <a class="navbar-brand" href="index.html">4/5 Studio Tarot</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -57,10 +57,12 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="https://github.com/Spicdev" class="navbar-brand"><img src="css/images/icons/github-logo.png" style="width: 20px;"></a>
+                        <a href="https://github.com/Spicdev" class="navbar-brand"><img
+                                src="css/images/icons/github-logo.png" style="width: 20px;"></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/國立台灣海洋大學塔羅研習社-139070089568704/" class="navbar-brand"><img src="css/images/icons/facebook.png" style="width: 20px;"></a>
+                        <a href="https://www.facebook.com/國立台灣海洋大學塔羅研習社-139070089568704/" class="navbar-brand"><img
+                                src="css/images/icons/facebook.png" style="width: 20px;"></a>
                     </li>
                     <li><a href="mailto:ntoutarot@gmail.com" class="navbar-brand">聯繫我們</a></li>
                 </ul>
@@ -74,7 +76,7 @@
             <h1>塔羅抽牌</h1>
             <p>抽牌前請先過目以下資訊，將會有助於抽牌時的準確度喔！</p>
             <ul>
-                <li>本站使用的是萊德偉特塔羅牌，78 張牌，包含反位</li>
+                <li>本站使用的是萊德偉特塔羅牌，78 張牌，包含逆位</li>
                 <li>請先想清楚你的問題，再依據你的問題選擇適合的牌陣</li>
                 <li>一為占二為賭，同樣的問題短期內請不要重複占，否則第二次後都會不準喔</li>
                 <li>將占卜作為一個參考用而不是決定用的工具</li>
@@ -101,7 +103,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <div class="caption">
-                        <h3>時間之流牌陣</h3>
+                        <h3>三張牌陣</h3>
                         <p>適用問題：</p>
                         <p>事情已經有個開端，想知道後續會如何發展</p>
                         <p>問題範例：</p>
@@ -129,10 +131,38 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>小十字牌陣</h3>
+                        <p>適用問題：</p>
+                        <p>想看事情的核心，或是想要更仔細的分析情況可使用</p>
+                        <p>問題範例：</p>
+                        <ul>
+                            <li>這個問題的核心是甚麼?</li>
+                            <li>我有甚麼要注意的問題嗎?</li>
+                        </ul>
+                        <p><button type="button" class="btn btn-primary" id="fiveChoicesSpread">開始</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>測試牌陣</h3>
+                        <p>適用問題：</p>
+                        <ul>
+                            <li>五張牌的格式</li>
+                            <li>五張牌的格式</li>
+                        </ul>
+                        <p><button type="button" class="btn btn-primary" id="testCardSpread">開始</button></p>
+                    </div>
+                </div>
+            </div>
         </div>
         <hr>
         <footer>
-            <p>Pat &copy; 2023</p>
+            <p>Penny &copy; 2023</p>
         </footer>
     </div>
     <!-- Modal -->
@@ -140,14 +170,19 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel"></h4>
                 </div>
                 <div class="modal-body">
                     <div class="row" id="myModalBody"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <hr>
+                    <h4 class="modal-title" id="myModalELabel"></h4>
+                    <div class="row" id="myModalExtra"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="dlcCards">補牌</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">關閉</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,6 +193,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/spread.js"></script>
+
 </body>
 
 </html>
